@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our drawing app!</title>
+    <link rel="stylesheet" href="look.css">
+  </head>
+  <body style='margin: 0'>
+    <div class="mainContainer">
+      <div id="toolbarSide">
+        <div class="left">
+          <div id='rad'>
+            <div id='decrad' class='radcontrol sign'>-</div>
+            <span id='radval' class='radcontrol'>5</span>
+            <div id='incrad' class='radcontrol sign'>+</div>
+          </div>
+          <div>
+            <select id="DrawStyle"></select>
+          </div>
+          <div>
+            <select id="fonts"></select>
+          </div>
+          <p>Enter the text here first</p>
+          <input id="textbox" type="text" name="text" value="My Text"><br>
+          <p>Then click on the canvas to draw the text</p>
+        </div>
+        <div class="right">
+          <div id="colors"></div>
+        </div>
+
+      </div>
+      <div>
+        <div id="toolbar">
+          <div id="Undo">
+            <button id="undoButton">Undo</button>
+            <button id="redoButton">Redo</button>
+            <button id="New Picture">New</button>
+          </div>
+          <button id="loadButton" type="button" name="loadButton">Load</button>
+          <button id="saveButton" type="button" name="saveButton">Save</button>
+          <button type="button"  name="saveAsButton">
+            <a href="#" id="saveAsButton" name="saveAsLink">Save as</a>
+          </button>
+        </div>
+        <canvas id='canvas' style='display: block;' width="800" height="600">
+          Browser not supported
+        </canvas>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js' charset="utf-8"></script>
+    <script src='shapes.js' charset="utf-8"></script>
+    <script src='drawIo.js' charset="utf-8"></script>
+    <script src='PenSize.js' charset="utf-8"></script>
+    <script src='colors.js' charset="utf-8"></script>
+    <script src='text.js' charset="utf-8"></script>
+    <script src='SaveLoad.js' charset="utf-8"></script>
+    <script src='UndoRedo.js' charset="utf-8"></script>
+    <script src='ToolSelect.js' charset="utf-8"></script>
+  </body>
+</html>

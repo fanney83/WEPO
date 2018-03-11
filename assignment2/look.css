@@ -1,0 +1,144 @@
+*{
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -m-user-select: none;
+  font-size: 10px;
+}
+body {
+  background-color:#4E9FC1;
+}
+button {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+  border: none;
+  height: 50px;
+  width: 65px;
+  margin: 10px;
+}
+p {
+  color: white;
+  font-size: 14px;
+}
+select {
+  outline: none;
+  border: none;
+  background-color: #4E9FC1;
+  width: 100px;
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: white;
+  color: #4E9FC1;
+  box-shadow: 0 0 5px 5px  #C1D9E4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#saveAsButton:hover {
+  color: #4E9FC1;
+
+}
+.right {
+  padding-left: 10px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+#textbox {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 14px;
+  padding-left: 5px;
+}
+#canvas {
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+#toolbarSide {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 120px;
+}
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+#toolbar > * {
+  margin-top: 15px;
+}
+#toolbar > :nth-child(2) {
+  margin-left: auto;
+}
+#saveAsButton {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+#saveAsButton:visited {
+  text-decoration: none;
+}
+.mainContainer {
+  display: flex;
+}
+.radcontrol {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+  border: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.sign:hover{
+  background-color: white;
+  color: #4E9FC1;
+  box-shadow: 0 0 1px 1px  #C1D9E4;
+  border-radius: 100px;
+  cursor: pointer;
+}
+#rad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  line-height: 24px;
+}
+.swatch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  box-shadow:  10px 1px 0px rgba(255, 255, 255, 0.5), 0px 2px 2px, rgba(0,0,0,0.5);
+  display: grid;
+  margin-right: 15px;
+  background-color: cyan;
+  cursor: pointer;
+}
+.swatch.active {
+  border: 2px solid white;
+  box-shadow: insert 0px 1px 2px,  rgba(0,0,0,0.5);
+}
